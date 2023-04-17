@@ -9,6 +9,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/omni_fiji_64.mk
 
 COMMON_LUNCH_CHOICES := \
+    omni_fiji_64-eng \
     omni_fiji_64-user \
-    omni_fiji_64-userdebug \
-    omni_fiji_64-eng
+    omni_fiji_64-userdebug
