@@ -56,11 +56,11 @@ PRODUCT_PACKAGES += \
     ueventd.rc \
 
 # Shipping API level
-PRODUCT_SHIPPING_API_LEVEL := 28
+PRODUCT_SHIPPING_API_LEVEL := 29
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/motorola/fiji_64/fiji_64-vendor.mk)
+$(call inherit-product-if-exists, vendor/motorola/fiji_64/fiji_64-vendor.mk)
