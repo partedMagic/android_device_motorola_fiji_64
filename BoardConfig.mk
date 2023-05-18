@@ -81,11 +81,14 @@ TARGET_USERIMAGES_USE_F2FS := true
 VENDOR_SECURITY_PATCH := 2021-08-01
 
 # Verified Boot
-BOARD_AVB_ENABLE := true
-BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
+#BOARD_AVB_ENABLE := true
+#BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
 
 # VINTF
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Inherit the proprietary files
 include vendor/motorola/fiji_64/BoardConfigVendor.mk
+
+# Fix for DUP Rules
+BUILD_BROKEN_DUP_RULES := true
