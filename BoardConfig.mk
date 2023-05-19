@@ -90,5 +90,5 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 # Inherit the proprietary files
 include vendor/motorola/fiji_64/BoardConfigVendor.mk
 
-# build sex
+# build for broken DUP
 BUILD_BROKEN_DUP_RULES := true
