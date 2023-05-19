@@ -64,3 +64,4 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Inherit the proprietary files
 $(call inherit-product-if-exists, vendor/motorola/fiji_64/fiji_64-vendor.mk)
+USE_XML_AUDIO_POLICY_CONF := 1
