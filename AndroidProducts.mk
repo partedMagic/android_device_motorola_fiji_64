@@ -5,9 +5,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_fiji_64.mk
+    $(LOCAL_DIR)/aosp_fiji_64.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_fiji_64-user \
-    lineage_fiji_64-userdebug \
-    lineage_fiji_64-eng
+    aosp_fiji_64-eng
