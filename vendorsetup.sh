@@ -1,1 +1,1 @@
-add_lunch_combo lineage_fiji_64-user
+add_lunch_combo aosp_fiji_64-eng
