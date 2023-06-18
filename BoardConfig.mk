@@ -85,8 +85,8 @@ TARGET_BOARD_PLATFORM := mt6765
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
-# Security patch level no leevel nigga
-#VENDOR_SECURITY_PATCH := 2021-08-01
+# Security patch level
+#VENDOR_SECURITY_PATCH := 2069-08-01
 
 # Verified Boot
 #BOARD_AVB_ENABLE := true
@@ -104,3 +104,6 @@ TW_SCREEN_BLANK_ON_BOOT := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
 TW_INCLUDE_REPACKTOOLS := true
+
+# Inherit the proprietary files
+include vendor/motorola/fiji_64/BoardConfigVendor.mk
