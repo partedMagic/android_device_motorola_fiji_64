@@ -14,19 +14,19 @@ AB_OTA_POSTINSTALL_CONFIG += \
     POSTINSTALL_OPTIONAL_system=true
 
 # Boot control HAL
-#PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
     android.hardware.boot@1.0-impl \
     android.hardware.boot@1.0-service
 
-#RODUCT_PACKAGES += \
+RODUCT_PACKAGES += \
     bootctrl.mt6765
 
-#PRODUCT_STATIC_BOOT_CONTROL_HAL := \
+PRODUCT_STATIC_BOOT_CONTROL_HAL := \
     bootctrl.mt6765 \
     libgptutils \
     libz \
     libcutils
-#PRODUCT_STATIC_BOOT_CONTROL_HAL := \
+PRODUCT_STATIC_BOOT_CONTROL_HAL := \
 	libgptutils \
 	libz\
 	libcutils
@@ -37,3 +37,6 @@ PRODUCT_PACKAGES += \
     update_engine \
     update_verifier \
     update_engine_sideload
+
+# Inherit the proprietary files
+$(call inherit-product, vendor/motorola/fiji_64/fiji_64-vendor.mk)
