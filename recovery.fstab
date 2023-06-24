@@ -10,8 +10,8 @@
 /mnt/vendor/nvdata        ext4     /dev/block/platform/bootdevice/by-name/nvdata        flags=display=nvdata
 /mnt/vendor/nvcfg         ext4     /dev/block/platform/bootdevice/by-name/nvcfg         flags=display=nvcfg
 /mnt/vendor/persist       ext4     /dev/block/platform/bootdevice/by-name/persist       flags=display=persist
-auto                      auto     /devices/platform/externdevice*                      flags=display=auto
-auto                      vfat     /devices/platform/mt_usb*                            flags=display=auto
+/external_sd              vfat     /dev/block/mmcblk1p1 /dev/block/mmcblk1              flags=display="Micro SDPorn";storage;wipeingui;removable
+/usb_otg                  vfat     /devices/platform/mt_usb*                            flags=display="USB OTG";storage;wipeingui;removeable
 /persistent               emmc     /dev/block/platform/bootdevice/by-name/frp           flags=display=persistent
 /nvram                    emmc     /dev/block/platform/bootdevice/by-name/nvram         flags=display=nvram
 /proinfo                  emmc     /dev/block/platform/bootdevice/by-name/proinfo       flags=display=proinfo
